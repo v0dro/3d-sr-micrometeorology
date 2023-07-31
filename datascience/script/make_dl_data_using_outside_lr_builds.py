@@ -12,6 +12,10 @@ import pandas as pd
 import xarray as xr
 from tqdm import tqdm
 
+ROOT_DIR = "/Users/sameer/gitrepos/3d-sr-micrometeorology" # Set your root dir.
+
+sys.path.insert(0, f"{ROOT_DIR}/datascience")
+
 from src.building_height_helper import (
     calc_ave_pooling_weights,
     calc_is_in_building,
@@ -30,7 +34,7 @@ logger.setLevel(INFO)
 
 dask.config.set(**{"array.slicing.split_large_chunks": True})
 
-ROOT_DIR = # Set your root dir.
+
 
 ROOT_RESUT_DIR = pathlib.Path("/data/mssg-results/tokyo_05m")
 DL_DATA_ROOT_DIR = pathlib.Path(f"{ROOT_DIR}/data/DL_data")
