@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR=/Users/sameer/gitrepos/3d-sr-micrometeorology
+ROOT_DIR=/home/sameer.deshmukh/gitrepos/3d-sr-micrometeorology
 
 IMAGE_PATH="${ROOT_DIR}/pytorch.sif"
 SCRIPT_PATH="${ROOT_DIR}/pytorch/script/train_model.py"
